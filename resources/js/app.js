@@ -20,8 +20,8 @@ Vue.component(AlertError.name, AlertError)
 //Routes
 Vue.use(VueRouter)
 let routes = [
-    // { path: '/dashboard', component: require('./components/Dashboard.vue').default},
-    // { path: '/articles', component: require('./components/Articles.vue').default},
+    { path: '/dashboard', component: require('./components/Dashboard.vue').default},
+    { path: '/articles', component: require('./components/Articles.vue').default},
 ]
 
 const router = new VueRouter({
@@ -38,8 +38,7 @@ const store = new Vuex.Store(
 
 
 //Components
-// Vue.component('sidebar', require('./components/Sidebar.vue').default);
-// Vue.component('navbar', require('./components/Navbar.vue').default);
+Vue.component('index', require('./components/Index.vue').default);
 
 
 
