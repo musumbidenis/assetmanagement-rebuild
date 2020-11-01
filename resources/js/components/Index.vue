@@ -5,7 +5,7 @@
             <navbar></navbar>
             <div class="content">
                 <div class="content">
-                <router-view></router-view>
+                  <router-view></router-view>
                 </div>
             </div>
             <!-- Footer-->

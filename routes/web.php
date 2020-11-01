@@ -11,6 +11,8 @@
 |
 */
 
+Route::get('/login', function () { return view('login'); });
+Route::get('/register', function () { return view('register'); });
 Route::get('/{any}', function () { return view('main'); })->where('any', '.*');
 
 // Route::get('/register', 'AuthController@registrationForm');
