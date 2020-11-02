@@ -18,7 +18,7 @@
         <div class="user-info">
           <a data-toggle="collapse" href="#collapseExample" class="username">
             <span>
-                Musumbi Denis                <b class="caret"></b>
+                {{ userDetails.email }}               <b class="caret"></b>
             </span>
           </a>
           <div class="collapse" id="collapseExample">
@@ -83,7 +83,13 @@ export default {
     data() {
         return {
             activeClass: 'active',
+            userDetails: []
         }
+    },
+    created() {
+       axios.get("/userDetails").then(({ data }) => {
+           this.userDetails = data;
+       })
     },
 }
 </script>

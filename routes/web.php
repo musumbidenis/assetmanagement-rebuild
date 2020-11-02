@@ -11,14 +11,17 @@
 |
 */
 
-Route::get('/login', function () { return view('login'); });
-Route::get('/register', function () { return view('register'); });
+
+Route::get('/login', 'AuthController@loginForm');
+Route::get('/register', 'AuthController@registrationForm');
+
+Route::get('/userDetails', 'AuthController@userDetails');
+
+Route::post('/register', 'AuthController@register');
+Route::post('/login', 'AuthController@login');
+
+
 Route::get('/{any}', function () { return view('main'); })->where('any', '.*');
-
-// Route::get('/register', 'AuthController@registrationForm');
-
-// Route::post('/register', 'AuthController@register');
-// Route::post('/login', 'AuthController@login');
 
 // Route::get('/home', 'PagesController@home');
 // Route::get('/asset', 'PagesController@asset');

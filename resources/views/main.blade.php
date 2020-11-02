@@ -15,7 +15,24 @@
 
 <body class="sidebar-mini">
   <div class="wrapper " id="app">
-    <index></index>
+    <sidebar></sidebar>
+    <div class="main-panel">
+        <navbar></navbar>
+        <div class="content">
+            <div class="content">
+              <router-view></router-view>
+            </div>
+        </div>
+        <!-- Footer-->
+        <footer class="footer">
+            <div class="container-fluid">
+            <div class="copyright">
+                    &copy; 2020 
+                    <a href="#" target="_blank">Article Manager</a> All rights reserved.
+                </div>
+            </div>
+        </footer>
+    </div>
   </div>
   <!--   Core JS Files   -->
   <script src="{{ asset('js/app.js')}}"></script>

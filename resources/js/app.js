@@ -38,7 +38,8 @@ const store = new Vuex.Store(
 
 
 //Components
-Vue.component('index', require('./components/Index.vue').default);
+Vue.component('sidebar', require('./components/Sidebar.vue').default);
+Vue.component('navbar', require('./components/Navbar.vue').default);
 
 
 
