@@ -56,15 +56,15 @@
           </router-link>
         </li>
 
-        <li :class="[currentPage.includes('articles') ? activeClass : '', 'nav-item']">
-          <router-link class="nav-link" to="/articles">
+        <li :class="[currentPage.includes('asset') ? activeClass : '', 'nav-item']">
+          <router-link class="nav-link" to="/asset">
             <i class="material-icons">assignment</i>
-            <p> Articles </p>
+            <p> Assets </p>
           </router-link>
         </li>
 
         <li  :class="[currentPage.includes('settings') ? activeClass : '', 'nav-item']">
-          <router-link class="nav-link" to="">
+          <router-link class="nav-link" to="/settings">
             <i class="material-icons">settings</i>
             <p> Settings </p>
           </router-link>

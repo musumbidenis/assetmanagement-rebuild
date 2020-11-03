@@ -21,7 +21,7 @@ Vue.component(AlertError.name, AlertError)
 Vue.use(VueRouter)
 let routes = [
     { path: '/dashboard', component: require('./components/Dashboard.vue').default},
-    { path: '/articles', component: require('./components/Articles.vue').default},
+    { path: '/asset', component: require('./components/Assets.vue').default},
 ]
 
 const router = new VueRouter({

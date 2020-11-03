@@ -17,7 +17,7 @@
   <div class="wrapper " id="app">
     <sidebar></sidebar>
     <div class="main-panel">
-        <navbar></navbar>
+        <navbar v-show="$route.name !== 'dashboard'"></navbar>
         <div class="content">
             <div class="content">
               <router-view></router-view>

@@ -21,12 +21,14 @@ Route::post('/register', 'AuthController@register');
 Route::post('/login', 'AuthController@login');
 
 
-Route::get('/{any}', function () { return view('main'); })->where('any', '.*');
+Route::get('/count/assets', 'DashboardController@assetCount');
+Route::get('/count/users', 'DashboardController@userCount');
 
-// Route::get('/home', 'PagesController@home');
-// Route::get('/asset', 'PagesController@asset');
-// Route::get('/session', 'PagesController@session');
-// Route::get('/report', 'PagesController@report');
+Route::get('/{any}', function () { return view('main'); })->where('any', '.*');
+// Route::get('/home', 'DashboardController@home');
+// Route::get('/asset', 'DashboardController@asset');
+// Route::get('/session', 'DashboardController@session');
+// Route::get('/report', 'DashboardController@report');
 
 // Route::post('/delete_asset/{id}', 'AssetsController@destroy');
 
@@ -37,3 +39,4 @@ Route::get('/{any}', function () { return view('main'); })->where('any', '.*');
 // Route::post('/asset/upload', 'AssetsController@store');
 
 // Route::get('/logout', 'AuthController@logout');
+
