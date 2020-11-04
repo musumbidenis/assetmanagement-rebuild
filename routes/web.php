@@ -21,8 +21,14 @@ Route::post('/register', 'AuthController@register');
 Route::post('/login', 'AuthController@login');
 
 
+
 Route::get('/count/assets', 'DashboardController@assetCount');
 Route::get('/count/users', 'DashboardController@userCount');
+
+
+
+Route::get('/get/assets', 'AssetsController@assets');
+
 
 Route::get('/{any}', function () { return view('main'); })->where('any', '.*');
 // Route::get('/home', 'DashboardController@home');

@@ -12,6 +12,19 @@ use DB;
 
 class AssetsController extends Controller
 {
+    /*GET
+     */
+    public function assets(Request $request)
+    {
+        $id = $request->session()->get('Techniciankey');
+        $assets = DB::table('assets')
+                    ->join('technicians', 'technicians.labId', '=', 'assets.labId')
+                    ->where('technicians.employeeId', '=', $id)
+                    ->distinct()
+                    ->get();
+            return response()->json($assets);
+    }
+
     /*POST
      */
     public function store(Request $request)

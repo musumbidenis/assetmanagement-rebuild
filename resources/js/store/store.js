@@ -1,41 +1,30 @@
 export default {
-
 	state: {
-
-      articles: []
-
+      assets: []
 	},
 
 	getters: {
-
-      getArticles(state){
-
-         return state.articles
+      getAssets(state){
+         return state.assets
       }
 	},
 
 	actions: {
-      allArticles(context){
-
-         axios.get("api/articles")
-
+      allAssets(context){
+         axios.get("/get/assets")
             .then((response)=>{
                console.log(response.data)
-               context.commit("SET_ARTICLES",response.data) 
-
+               context.commit("SET_ASSETS",response.data) 
             })
-
             .catch(()=>{
-               
                console.log("Error........")
-               
             })
        }
 	},
 
 	mutations: {
-      SET_ARTICLES(state,data) {
-         return state.articles = data
+      SET_ASSETS(state,data) {
+         return state.assets = data
       }
 	}
 }

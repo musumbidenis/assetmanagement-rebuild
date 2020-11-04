@@ -1963,7 +1963,87 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-/* harmony default export */ __webpack_exports__["default"] = ({});
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ __webpack_exports__["default"] = ({
+  computed: {
+    assets: function assets() {
+      return this.$store.getters.getAssets;
+    }
+  },
+  mounted: function mounted() {
+    this.$store.dispatch("allAssets");
+  }
+});
 
 /***/ }),
 
@@ -38770,97 +38850,324 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "container-fluid" }, [
       _c("div", { staticClass: "row" }, [
-        _c("div", { staticClass: "col-lg-12 col-md-6 col-sm-6" }, [
-          _c("div", { staticClass: "card " }, [
+        _c("div", { staticClass: "col-md-12" }, [
+          _c("div", { staticClass: "card" }, [
             _c(
               "div",
               { staticClass: "card-header card-header-rose card-header-icon" },
               [
                 _c("div", { staticClass: "card-icon" }, [
-                  _c("i", { staticClass: "material-icons" }, [_vm._v("info")])
+                  _c("i", { staticClass: "material-icons" }, [
+                    _vm._v("assignment")
+                  ])
                 ]),
                 _vm._v(" "),
                 _c("h4", { staticClass: "card-title" }, [
-                  _vm._v("Edit Records")
-                ]),
-                _vm._v(" "),
-                _c(
-                  "button",
-                  {
-                    staticClass: "btn btn-info",
-                    attrs: {
-                      type: "button",
-                      "data-toggle": "modal",
-                      "data-target": "#articleModal"
-                    }
-                  },
-                  [_vm._v("Add article")]
-                )
+                  _vm._v("Simple Table")
+                ])
               ]
             ),
             _vm._v(" "),
             _c("div", { staticClass: "card-body" }, [
-              _c("div", { staticClass: "toolbar" }),
-              _vm._v(" "),
-              _c("div", { staticClass: "material-datatables" }, [
-                _c(
-                  "table",
-                  {
-                    staticClass:
-                      "table table-striped table-no-bordered table-hover",
-                    staticStyle: { width: "100%" },
-                    attrs: {
-                      id: "datatables02",
-                      cellspacing: "0",
-                      width: "100%"
-                    }
-                  },
-                  [
-                    _c("thead", [
-                      _c("tr", [
-                        _c("td", [_vm._v("Asset Name")]),
-                        _vm._v(" "),
-                        _c("td", [_vm._v("Serial Number")]),
-                        _vm._v(" "),
-                        _c("td", [_vm._v("Asset Description")]),
+              _c("div", { staticClass: "table-responsive" }, [
+                _c("table", { staticClass: "table table-striped" }, [
+                  _c("thead", [
+                    _c("tr", [
+                      _c("th", { staticClass: "text-center" }, [_vm._v("#")]),
+                      _vm._v(" "),
+                      _c("th", [_vm._v("Name")]),
+                      _vm._v(" "),
+                      _c("th", [_vm._v("Job Position")]),
+                      _vm._v(" "),
+                      _c("th", [_vm._v("Since")]),
+                      _vm._v(" "),
+                      _c("th", { staticClass: "text-right" }, [
+                        _vm._v("Salary")
+                      ]),
+                      _vm._v(" "),
+                      _c("th", { staticClass: "text-right" }, [
+                        _vm._v("Actions")
+                      ])
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("tbody", [
+                    _c("tr", [
+                      _c("td", { staticClass: "text-center" }, [_vm._v("1")]),
+                      _vm._v(" "),
+                      _c("td", [_vm._v("Andrew Mike")]),
+                      _vm._v(" "),
+                      _c("td", [_vm._v("Develop")]),
+                      _vm._v(" "),
+                      _c("td", [_vm._v("2013")]),
+                      _vm._v(" "),
+                      _c("td", { staticClass: "text-right" }, [
+                        _vm._v("€ 99,225")
+                      ]),
+                      _vm._v(" "),
+                      _c("td", { staticClass: "td-actions text-right" }, [
+                        _c(
+                          "button",
+                          {
+                            staticClass: "btn btn-info",
+                            attrs: { type: "button", rel: "tooltip" }
+                          },
+                          [
+                            _c("i", { staticClass: "material-icons" }, [
+                              _vm._v("person")
+                            ])
+                          ]
+                        ),
                         _vm._v(" "),
                         _c(
-                          "td",
-                          { staticClass: "disabled-sorting text-right" },
-                          [_vm._v("Action")]
+                          "button",
+                          {
+                            staticClass: "btn btn-success",
+                            attrs: { type: "button", rel: "tooltip" }
+                          },
+                          [
+                            _c("i", { staticClass: "material-icons" }, [
+                              _vm._v("edit")
+                            ])
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "button",
+                          {
+                            staticClass: "btn btn-danger",
+                            attrs: { type: "button", rel: "tooltip" }
+                          },
+                          [
+                            _c("i", { staticClass: "material-icons" }, [
+                              _vm._v("close")
+                            ])
+                          ]
                         )
                       ])
                     ]),
                     _vm._v(" "),
-                    _c("tbody", [
-                      _c("tr", [
-                        _c("td", [_vm._v("hh")]),
-                        _vm._v(" "),
-                        _c("td", [_vm._v("hhhh")]),
-                        _vm._v(" "),
-                        _c("td", [_vm._v("hhhh")])
-                      ])
-                    ]),
-                    _vm._v(" "),
-                    _c("tfoot", [
-                      _c("tr", [
-                        _c("td", [_vm._v("Asset Name")]),
-                        _vm._v(" "),
-                        _c("td", [_vm._v("Serial Number")]),
-                        _vm._v(" "),
-                        _c("td", [_vm._v("Asset Description")]),
+                    _c("tr", [
+                      _c("td", { staticClass: "text-center" }, [_vm._v("2")]),
+                      _vm._v(" "),
+                      _c("td", [_vm._v("John Doe")]),
+                      _vm._v(" "),
+                      _c("td", [_vm._v("Design")]),
+                      _vm._v(" "),
+                      _c("td", [_vm._v("2012")]),
+                      _vm._v(" "),
+                      _c("td", { staticClass: "text-right" }, [
+                        _vm._v("€ 89,241")
+                      ]),
+                      _vm._v(" "),
+                      _c("td", { staticClass: "td-actions text-right" }, [
+                        _c(
+                          "button",
+                          {
+                            staticClass: "btn btn-info btn-round",
+                            attrs: { type: "button", rel: "tooltip" }
+                          },
+                          [
+                            _c("i", { staticClass: "material-icons" }, [
+                              _vm._v("person")
+                            ])
+                          ]
+                        ),
                         _vm._v(" "),
                         _c(
-                          "td",
-                          { staticClass: "disabled-sorting text-right" },
-                          [_vm._v("Action")]
+                          "button",
+                          {
+                            staticClass: "btn btn-success btn-round",
+                            attrs: { type: "button", rel: "tooltip" }
+                          },
+                          [
+                            _c("i", { staticClass: "material-icons" }, [
+                              _vm._v("edit")
+                            ])
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "button",
+                          {
+                            staticClass: "btn btn-danger btn-round",
+                            attrs: { type: "button", rel: "tooltip" }
+                          },
+                          [
+                            _c("i", { staticClass: "material-icons" }, [
+                              _vm._v("close")
+                            ])
+                          ]
                         )
                       ])
                     ]),
                     _vm._v(" "),
-                    _c("tbody")
-                  ]
-                )
+                    _c("tr", [
+                      _c("td", { staticClass: "text-center" }, [_vm._v("3")]),
+                      _vm._v(" "),
+                      _c("td", [_vm._v("Alex Mike")]),
+                      _vm._v(" "),
+                      _c("td", [_vm._v("Design")]),
+                      _vm._v(" "),
+                      _c("td", [_vm._v("2010")]),
+                      _vm._v(" "),
+                      _c("td", { staticClass: "text-right" }, [
+                        _vm._v("€ 92,144")
+                      ]),
+                      _vm._v(" "),
+                      _c("td", { staticClass: "td-actions text-right" }, [
+                        _c(
+                          "button",
+                          {
+                            staticClass: "btn btn-info btn-link",
+                            attrs: { type: "button", rel: "tooltip" }
+                          },
+                          [
+                            _c("i", { staticClass: "material-icons" }, [
+                              _vm._v("person")
+                            ])
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "button",
+                          {
+                            staticClass: "btn btn-success btn-link",
+                            attrs: { type: "button", rel: "tooltip" }
+                          },
+                          [
+                            _c("i", { staticClass: "material-icons" }, [
+                              _vm._v("edit")
+                            ])
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "button",
+                          {
+                            staticClass: "btn btn-danger btn-link",
+                            attrs: { type: "button", rel: "tooltip" }
+                          },
+                          [
+                            _c("i", { staticClass: "material-icons" }, [
+                              _vm._v("close")
+                            ])
+                          ]
+                        )
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c("tr", [
+                      _c("td", { staticClass: "text-center" }, [_vm._v("4")]),
+                      _vm._v(" "),
+                      _c("td", [_vm._v("Mike Monday")]),
+                      _vm._v(" "),
+                      _c("td", [_vm._v("Marketing")]),
+                      _vm._v(" "),
+                      _c("td", [_vm._v("2013")]),
+                      _vm._v(" "),
+                      _c("td", { staticClass: "text-right" }, [
+                        _vm._v("€ 49,990")
+                      ]),
+                      _vm._v(" "),
+                      _c("td", { staticClass: "td-actions text-right" }, [
+                        _c(
+                          "button",
+                          {
+                            staticClass: "btn btn-info btn-round",
+                            attrs: { type: "button", rel: "tooltip" }
+                          },
+                          [
+                            _c("i", { staticClass: "material-icons" }, [
+                              _vm._v("person")
+                            ])
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "button",
+                          {
+                            staticClass: "btn btn-success btn-round",
+                            attrs: { type: "button", rel: "tooltip" }
+                          },
+                          [
+                            _c("i", { staticClass: "material-icons" }, [
+                              _vm._v("edit")
+                            ])
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "button",
+                          {
+                            staticClass: "btn btn-danger btn-round",
+                            attrs: { type: "button", rel: "tooltip" }
+                          },
+                          [
+                            _c("i", { staticClass: "material-icons" }, [
+                              _vm._v("close")
+                            ])
+                          ]
+                        )
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c("tr", [
+                      _c("td", { staticClass: "text-center" }, [_vm._v("5")]),
+                      _vm._v(" "),
+                      _c("td", [_vm._v("Paul Dickens")]),
+                      _vm._v(" "),
+                      _c("td", [_vm._v("Communication")]),
+                      _vm._v(" "),
+                      _c("td", [_vm._v("2015")]),
+                      _vm._v(" "),
+                      _c("td", { staticClass: "text-right" }, [
+                        _vm._v("€ 69,201")
+                      ]),
+                      _vm._v(" "),
+                      _c("td", { staticClass: "td-actions text-right" }, [
+                        _c(
+                          "button",
+                          {
+                            staticClass: "btn btn-info",
+                            attrs: { type: "button", rel: "tooltip" }
+                          },
+                          [
+                            _c("i", { staticClass: "material-icons" }, [
+                              _vm._v("person")
+                            ])
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "button",
+                          {
+                            staticClass: "btn btn-success",
+                            attrs: { type: "button", rel: "tooltip" }
+                          },
+                          [
+                            _c("i", { staticClass: "material-icons" }, [
+                              _vm._v("edit")
+                            ])
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "button",
+                          {
+                            staticClass: "btn btn-danger",
+                            attrs: { type: "button", rel: "tooltip" }
+                          },
+                          [
+                            _c("i", { staticClass: "material-icons" }, [
+                              _vm._v("close")
+                            ])
+                          ]
+                        )
+                      ])
+                    ])
+                  ])
+                ])
               ])
             ])
           ])
@@ -56279,26 +56586,26 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ({
   state: {
-    articles: []
+    assets: []
   },
   getters: {
-    getArticles: function getArticles(state) {
-      return state.articles;
+    getAssets: function getAssets(state) {
+      return state.assets;
     }
   },
   actions: {
-    allArticles: function allArticles(context) {
-      axios.get("api/articles").then(function (response) {
+    allAssets: function allAssets(context) {
+      axios.get("/get/assets").then(function (response) {
         console.log(response.data);
-        context.commit("SET_ARTICLES", response.data);
+        context.commit("SET_ASSETS", response.data);
       })["catch"](function () {
         console.log("Error........");
       });
     }
   },
   mutations: {
-    SET_ARTICLES: function SET_ARTICLES(state, data) {
-      return state.articles = data;
+    SET_ASSETS: function SET_ASSETS(state, data) {
+      return state.assets = data;
     }
   }
 });

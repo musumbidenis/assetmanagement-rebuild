@@ -1,60 +1,138 @@
 <template>
-<div class="container-fluid">
-    <div class="row">
-            <!-- Edit assets Card Start -->
-    <div class="col-lg-12 col-md-6 col-sm-6">
-        <div class="card ">
-        <div class="card-header card-header-rose card-header-icon">
-            <div class="card-icon">
-            <i class="material-icons">info</i>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="card">
+                <div class="card-header card-header-rose card-header-icon">
+                  <div class="card-icon">
+                    <i class="material-icons">assignment</i>
+                  </div>
+                  <h4 class="card-title">Simple Table</h4>
+                </div>
+                <div class="card-body">
+                  <div class="table-responsive">
+                    <table class="table table-striped">
+                      <thead>
+                        <tr>
+                          <th class="text-center">#</th>
+                          <th>Name</th>
+                          <th>Job Position</th>
+                          <th>Since</th>
+                          <th class="text-right">Salary</th>
+                          <th class="text-right">Actions</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="text-center">1</td>
+                          <td>Andrew Mike</td>
+                          <td>Develop</td>
+                          <td>2013</td>
+                          <td class="text-right">&euro; 99,225</td>
+                          <td class="td-actions text-right">
+                            <button type="button" rel="tooltip" class="btn btn-info">
+                              <i class="material-icons">person</i>
+                            </button>
+                            <button type="button" rel="tooltip" class="btn btn-success">
+                              <i class="material-icons">edit</i>
+                            </button>
+                            <button type="button" rel="tooltip" class="btn btn-danger">
+                              <i class="material-icons">close</i>
+                            </button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="text-center">2</td>
+                          <td>John Doe</td>
+                          <td>Design</td>
+                          <td>2012</td>
+                          <td class="text-right">&euro; 89,241</td>
+                          <td class="td-actions text-right">
+                            <button type="button" rel="tooltip" class="btn btn-info btn-round">
+                              <i class="material-icons">person</i>
+                            </button>
+                            <button type="button" rel="tooltip" class="btn btn-success btn-round">
+                              <i class="material-icons">edit</i>
+                            </button>
+                            <button type="button" rel="tooltip" class="btn btn-danger btn-round">
+                              <i class="material-icons">close</i>
+                            </button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="text-center">3</td>
+                          <td>Alex Mike</td>
+                          <td>Design</td>
+                          <td>2010</td>
+                          <td class="text-right">&euro; 92,144</td>
+                          <td class="td-actions text-right">
+                            <button type="button" rel="tooltip" class="btn btn-info btn-link">
+                              <i class="material-icons">person</i>
+                            </button>
+                            <button type="button" rel="tooltip" class="btn btn-success btn-link">
+                              <i class="material-icons">edit</i>
+                            </button>
+                            <button type="button" rel="tooltip" class="btn btn-danger btn-link">
+                              <i class="material-icons">close</i>
+                            </button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="text-center">4</td>
+                          <td>Mike Monday</td>
+                          <td>Marketing</td>
+                          <td>2013</td>
+                          <td class="text-right">&euro; 49,990</td>
+                          <td class="td-actions text-right">
+                            <button type="button" rel="tooltip" class="btn btn-info btn-round">
+                              <i class="material-icons">person</i>
+                            </button>
+                            <button type="button" rel="tooltip" class="btn btn-success btn-round">
+                              <i class="material-icons">edit</i>
+                            </button>
+                            <button type="button" rel="tooltip" class="btn btn-danger btn-round">
+                              <i class="material-icons">close</i>
+                            </button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="text-center">5</td>
+                          <td>Paul Dickens</td>
+                          <td>Communication</td>
+                          <td>2015</td>
+                          <td class="text-right">&euro; 69,201</td>
+                          <td class="td-actions text-right">
+                            <button type="button" rel="tooltip" class="btn btn-info">
+                              <i class="material-icons">person</i>
+                            </button>
+                            <button type="button" rel="tooltip" class="btn btn-success">
+                              <i class="material-icons">edit</i>
+                            </button>
+                            <button type="button" rel="tooltip" class="btn btn-danger">
+                              <i class="material-icons">close</i>
+                            </button>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
             </div>
-            <h4 class="card-title">Edit Records</h4>
-            <button type="button" class="btn btn-info" data-toggle="modal" data-target="#articleModal">Add article</button>
-        </div>
-
-        <!-- Display the assets available in the database -->
-        <div class="card-body">
-        <div class="toolbar">
-            <!--        Here you can write extra buttons/actions for the toolbar              -->
-        </div>
-        <div class="material-datatables">
-            <table id="datatables02" class="table table-striped table-no-bordered table-hover" cellspacing="0" width="100%" style="width:100%">
-            <thead>
-                <tr>
-                <td>Asset Name</td>
-                <td>Serial Number</td>
-                <td>Asset Description</td>
-                <td class="disabled-sorting text-right">Action</td>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-            <td>hh</td>
-            <td>hhhh</td>
-            <td>hhhh</td>
-            </tr>
-            </tbody>
-            <tfoot>
-                <tr>
-                <td>Asset Name</td>
-                <td>Serial Number</td>
-                <td>Asset Description</td>
-                <td class="disabled-sorting text-right">Action</td>
-            </tr>
-            </tfoot>
-            <tbody>
-            </tbody>
-            </table>
-        </div>
-        </div>
-        </div>
-    </div>
-    <!-- Edit assets Card End -->
-    </div>
-</div>
+              <!--  end card  -->
+            </div>
+            <!-- end col-md-12 -->
+          </div>
 </template>
 <script>
 export default {
-    
+    computed: {
+        assets(){
+            return this.$store.getters.getAssets;
+        }
+    },
+    mounted() {
+        this.$store.dispatch("allAssets")
+    },
 }
 </script>
